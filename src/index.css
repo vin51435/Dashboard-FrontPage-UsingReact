@@ -13,6 +13,8 @@ body {
 
 main {
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .nav-div{
@@ -25,6 +27,10 @@ main {
   position: relative;
   left: 18%;
   width: 80%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 20px;
+  box-sizing: content-box;
 }
 
 form.nosubmit {

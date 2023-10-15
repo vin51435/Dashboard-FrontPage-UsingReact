@@ -12,7 +12,7 @@ import { Products } from "./Products";
 const HomeContent = () => {
 
   return (
-    <div className="container  px-4 m-3 main-div">
+    <div className="container  m-3 main-div">
       <div className="container text-center">
         <div className="row  justify-content-between align-items-center">
           <div className="col-4 text-start align-middle">
