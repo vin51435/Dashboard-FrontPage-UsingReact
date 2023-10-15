@@ -15,6 +15,18 @@ main {
   height: 100%;
 }
 
+.nav-div{
+  width: 20%;
+  position: fixed;
+  height: 100vh;
+}
+
+.main-div{
+  position: relative;
+  left: 18%;
+  width: 80%;
+}
+
 form.nosubmit {
   border: none;
   padding: 0;

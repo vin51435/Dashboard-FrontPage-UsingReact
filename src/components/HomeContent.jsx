@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import BarChart from "./BarChart";
-import { UserData, CustomerData } from '../Data.js';
 import DoughnutChart from "./DoughnutChart";
 import incomePng from '../assets/income.png';
 import salesPng from '../assets/sales.png';
@@ -8,11 +7,12 @@ import clipboardPng from '../assets/clipboard.png';
 import walletPng from '../assets/wallet.png';
 import downArrowPng from '../assets/arrow-down.png';
 import upArrowPng from '../assets/up-down.png';
+import { Products } from "./Products";
 
 const HomeContent = () => {
 
   return (
-    <div className="container  px-4 m-4">
+    <div className="container  px-4 m-3 main-div">
       <div className="container text-center">
         <div className="row  justify-content-between align-items-center">
           <div className="col-4 text-start align-middle">
@@ -98,19 +98,7 @@ const HomeContent = () => {
           </div>
         </div>
       </div>
-      <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col-12">
-            One of three columns
-          </div>
-          <div class="col-12">
-            One of three columns
-          </div>
-          <div class="col-12">
-            One of three columns
-          </div>
-        </div>
-      </div>
+      <Products />
     </div>
   );
 };
