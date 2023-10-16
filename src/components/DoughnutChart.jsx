@@ -16,7 +16,7 @@ function DoughnutChart() {
         backgroundColor: [
           'rgb(194 ,143, 194)',
           'rgba(21, 21, 87,1)',
-          'rgba(240, 239, 239,1 )'
+          'rgba(200, 200, 200,1 )'
         ],
         // borderColor: [
         //   'rgba(33, 37, 41,0.2)',
