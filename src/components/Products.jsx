@@ -27,10 +27,18 @@ export const Products = () => {
           <div className="container">
             <div className="row text-start">
               <div className="col-6">
-                <div>
-                  <img src="https://www.ytechb.com/wp-content/uploads/2022/08/Windows-365-Wallpapers.webp" alt="product" className="product-img"/>
-                  <p>Abstract 3d</p>
-                  <p>Sub</p>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-3">
+                      <img src="https://www.ytechb.com/wp-content/uploads/2022/08/Windows-365-Wallpapers.webp" alt="product" className="product-img" />
+                    </div>
+                    <div className="col-9">
+                      <div className="">
+                        <p className="product-title">Abstract 3d</p><br />
+                        <p className="product-subtitle">Sub</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="col-2">32 in stock</div>
