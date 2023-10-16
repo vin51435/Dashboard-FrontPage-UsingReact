@@ -4,7 +4,6 @@ import { UserData } from '../Data';
 import { Chart as ChartJS } from 'chart.js/auto';
 
 function BarChart({ chartData }) {
-
   const currentMonth = 10;
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.month),
@@ -13,7 +12,13 @@ function BarChart({ chartData }) {
         label: "",
         data: UserData.map((data) => data.income),
         backgroundColor: [
-          'rgba(240, 239, 239,1 )',
+          'rgba(200, 200, 200,1 )',
+          'rgba(200, 200, 200,1 )',
+          'rgba(200, 200, 200,1 )',
+          'rgba(200, 200, 200,1 )',
+          'rgba(200, 200, 200,1 )',
+          'rgba(200, 200, 200,1 )',
+          'rgba(21, 21, 87,1 )',
         ], // Different colors for each bar
         borderColor: [
           'rgba(33, 37, 41,0.2)',
@@ -26,8 +31,6 @@ function BarChart({ chartData }) {
     ]
   });
 
-
-
   const changeBarColor = (barIndex, backgroundColor) => {
     const newArray = Array.from({ length: UserData.length }, () => 'rgba(200, 200, 200,1 )');
     const updatedData = { ...userData };
@@ -39,7 +42,7 @@ function BarChart({ chartData }) {
   };
 
   useEffect(() => {
-    changeBarColor((currentMonth - 1), 'rgb(21, 21, 87,1 )');
+    changeBarColor((currentMonth - 1), 'rgba(21, 21, 87,1 )');
   }, []);
 
   const options = {
