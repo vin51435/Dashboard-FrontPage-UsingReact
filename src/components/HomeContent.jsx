@@ -12,13 +12,13 @@ import { Products } from "./Products";
 const HomeContent = () => {
 
   return (
-    <div className="container  m-3 main-div">
-      <div className="container text-center mb-3">
+    <div className="container-lg main-div">
+      <div className="container-lg text-center mb-3">
         <div className="row  justify-content-between align-items-center">
           <div className="col-4 text-start align-middle">
             Hello Vinay 👋🏼,
           </div>
-          <div className="col-4">
+          <div className="col-8 col-md-4">
             <div className="form-inline">
               <form className="nosubmit">
                 <input className="nosubmit" type="search" placeholder="Search..." />
@@ -27,10 +27,10 @@ const HomeContent = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container-lg">
         <div className="row gx-3 gy-4">
-          <div className="col-3 ">
-            <div className="container circ-bg earning-container">
+          <div className="col-6 col-sm-3">
+            <div className="container-lg circ-bg earning-container">
               <div className="row">
                 <div className="col-4 circ-img-container">
                   <img className="circ-img" src={incomePng} alt="Image Description" />
@@ -44,10 +44,10 @@ const HomeContent = () => {
               </div>
             </div>
           </div>
-          <div className="col-3">
-            <div className="container circ-bg orders-container">
+          <div className="col-6 col-sm-3">
+            <div className="container-lg circ-bg orders-container">
               <div className="row">
-                <div className="col-4">
+                <div className="col-4 circ-img-container">
                   <img className="circ-img" src={clipboardPng} alt="Image Description" />
                 </div>
                 <div className="col-8">
@@ -59,10 +59,10 @@ const HomeContent = () => {
               </div>
             </div>
           </div>
-          <div className="col-3">
-            <div className="container circ-bg balance-container">
+          <div className="col-6 col-sm-3">
+            <div className="container-lg circ-bg balance-container">
               <div className="row">
-                <div className="col-4">
+                <div className="col-4 circ-img-container">
                   <img className="circ-img" src={walletPng} alt="Image Description" />
                 </div>
                 <div className="col-8">
@@ -75,10 +75,10 @@ const HomeContent = () => {
               </div>
             </div>
           </div>
-          <div className="col-3">
-            <div className="container circ-bg sales-container">
+          <div className="col-6 col-sm-3">
+            <div className="container-lg circ-bg sales-container">
               <div className="row">
-                <div className="col-4">
+                <div className="col-4 circ-img-container">
                   <img className="circ-img" src={salesPng} alt="Image Description" />
                 </div>
                 <div className="col-8">
@@ -90,10 +90,10 @@ const HomeContent = () => {
               </div>
             </div>
           </div>
-          <div className="col-8 ">
+          <div className="col-12 col-sm-8 barGraph-div">
             <BarChart />
           </div>
-          <div className="col-4 ">
+          <div className="col-12 col-sm-4 doughnut-div">
             <DoughnutChart />
           </div>
         </div>

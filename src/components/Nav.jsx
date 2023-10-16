@@ -6,7 +6,7 @@ const Nav = () => {
 
   return (
     // <main className="d-flex flex-nowrap">
-      <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark nav-div" style={{ width: '280px' }}>
+      <div className="flex-column flex-shrink-0 p-3 text-white bg-dark nav-div" >
         <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
           <FontAwesomeIcon className="bi me-2" width="40" height="32" icon={faCompass} />
           <span className="fs-4">Dashboard</span>
