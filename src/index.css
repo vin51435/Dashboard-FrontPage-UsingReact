@@ -19,11 +19,21 @@ main {
   width: 100%;
 }
 
+p{
+  margin: 0;
+}
+
 .nav-div {
   width: 20%;
   position: fixed;
   height: 100vh;
   display: flex;
+  background-color: #151557;
+}
+
+.activa {
+  background-color: #ffffff4a;
+  color: white;
 }
 
 .main-div {
@@ -64,6 +74,15 @@ input.nosubmit:focus {
   /* Remove the border when focused */
 }
 
+.chart-desc{
+  position: relative;
+  background-color: white;
+  padding-left: 5px;
+  top: 8px;
+  background-color: white;
+  border-radius: 0.5em;
+}
+
 .graphColumn,
 .circ-bg,
 .product-main-container {
@@ -81,13 +100,17 @@ input.nosubmit:focus {
 .center-text {
   text-align: center;
   position: relative;
-  bottom: 50%;
+  bottom: 47%;
   font-size: 18px;
   color: #333;
 }
 
 .doughnut-small-text {
   font-size: 10px;
+}
+
+.circ-bg {
+  height: 100%;
 }
 
 .circ-img-container {
@@ -209,8 +232,8 @@ antiquewhite
   --bs-btn-hover-border-color: #f8f9fa;
 }
 
-b{
-  color:#228b22;
+b {
+  color: #228b22;
 }
 
 .product-mobile-view {
@@ -236,6 +259,27 @@ b{
   font-size: 0.9rem;
 }
 
+.nav-mob {
+  height: 60px;
+  width: 100%;
+  display: none;
+}
+
+.nav-mob-container {
+  background-color: #151557;
+  padding-bottom: 10px;
+  /* border-bottom-right-radius: 10px; */
+  /* border-bottom-left-radius: 10px; */
+}
+
+.nav-mob {
+  background-color: #151557;
+}
+
+.navbar-toggler {
+  color: #151557;
+}
+
 /* sm */
 @media (max-width: 576px) {
   .product-name {
@@ -246,8 +290,13 @@ b{
     width: 120%;
     min-height: 70px;
   }
+
   .product-details-mob {
     font-size: 0.7rem;
+  }
+  
+  .doughnut-small-text {
+    display: flex;
   }
 }
 
@@ -260,6 +309,10 @@ b{
   .product-mobile-view {
     display: contents;
   }
+
+  .doughnut-small-text {
+    display: none;
+  }
 }
 
 /* lg */
@@ -268,20 +321,42 @@ b{
     display: none;
   }
 
+  .nav-mob {
+    display: block;
+    z-index: 10000;
+    left: 0;
+    position: fixed;
+    top: 0;
+  }
+
   .main-div {
     left: 0;
     width: 100%;
     margin: 0.5rem 0.2rem;
     padding: 0;
+    top: 65px
   }
 
   .circ-bg {
     padding: 0 0 0 15px;
   }
+
+  .center-text {
+    font-size: 14px;
+  }
+
+  .doughnut-small-text {
+    font-size: 9px;
+  }
 }
 
 /* xl */
-/* @media (min-width: 1200px) { ... } */
+@media (max-width: 1200px) {
+  .center-text {
+    font-size: 14px;
+  }
+
+}
 
 /* xxl */
 /* @media (min-width: 1400px) { ... } */

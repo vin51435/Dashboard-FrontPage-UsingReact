@@ -91,9 +91,18 @@ const HomeContent = () => {
             </div>
           </div>
           <div className="col-12 col-sm-8 barGraph-div">
+            <div className="chart-desc">
+              <p>Overview</p>
+              <p className="circ-text-top">Monthly Earning</p>
+            </div>
             <BarChart />
           </div>
           <div className="col-12 col-sm-4 doughnut-div">
+          <div className="chart-desc">
+              <p>Customers</p>
+              <p className="circ-text-top">Customers that buy Products</p>
+            </div>
+            {/* <p className="chart-desc">dead</p> */}
             <DoughnutChart />
           </div>
         </div>

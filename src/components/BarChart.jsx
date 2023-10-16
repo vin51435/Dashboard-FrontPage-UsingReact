@@ -28,8 +28,8 @@ function BarChart({ chartData }) {
 
 
 
-  const changeBarColor = (barIndex, backgroundColor, borderColor) => {
-    const newArray = Array.from({ length: UserData.length }, () => 'rgba(240, 239, 239,1 )');
+  const changeBarColor = (barIndex, backgroundColor) => {
+    const newArray = Array.from({ length: UserData.length }, () => 'rgba(200, 200, 200,1 )');
     const updatedData = { ...userData };
     updatedData.datasets[0].backgroundColor = newArray;
     updatedData.datasets[0].backgroundColor[barIndex] = backgroundColor;
@@ -39,7 +39,7 @@ function BarChart({ chartData }) {
   };
 
   useEffect(() => {
-    changeBarColor((currentMonth - 1), 'rgba(33, 37, 41,1 )', 'rgba(255, 99, 132, 1)');
+    changeBarColor((currentMonth - 1), 'rgb(21, 21, 87,1 )');
   }, []);
 
   const options = {
@@ -62,7 +62,8 @@ function BarChart({ chartData }) {
     },
   };
   return (
-    <Bar data={userData} options={options} className='graphColumn' />);
+    <Bar data={userData} options={options} className='graphColumn' />
+    );
 }
 export default BarChart
 // options={} 

@@ -14,8 +14,8 @@ function DoughnutChart() {
         label: "",
         data: CustomerData,
         backgroundColor: [
-          'rgb(255, 99, 132)',
-          'rgba(33, 37, 41,1 )',
+          'rgb(194 ,143, 194)',
+          'rgba(21, 21, 87,1)',
           'rgba(240, 239, 239,1 )'
         ],
         // borderColor: [
