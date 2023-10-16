@@ -13,7 +13,7 @@ const HomeContent = () => {
 
   return (
     <div className="container  m-3 main-div">
-      <div className="container text-center">
+      <div className="container text-center mb-3">
         <div className="row  justify-content-between align-items-center">
           <div className="col-4 text-start align-middle">
             Hello Vinay 👋🏼,
@@ -27,7 +27,7 @@ const HomeContent = () => {
           </div>
         </div>
       </div>
-      <div className="container my-4">
+      <div className="container">
         <div className="row gx-3 gy-4">
           <div className="col-3 ">
             <div className="container circ-bg earning-container">

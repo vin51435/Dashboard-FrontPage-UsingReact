@@ -5,7 +5,9 @@ body {
   height: 100vh;
   background-color: #f0efef;
   font-family: 'Poppins', sans-serif;
-  -ms-overflow-style: none; /*hiding scroll bar*/
+  -ms-overflow-style: none;
+  /*hiding scroll bar*/
+  box-sizing: border-box;
 }
 
 #root {
@@ -17,21 +19,22 @@ main {
   width: 100%;
 }
 
-.nav-div{
+.nav-div {
   width: 20%;
   position: fixed;
   height: 100vh;
 }
 
-.main-div{
+.main-div {
   position: relative;
   left: 18%;
   width: 80%;
   height: 100%;
 }
 
-body::-webkit-scrollbar{
-  display: none; /*hiding scroll bar*/
+body::-webkit-scrollbar {
+  display: none;
+  /*hiding scroll bar*/
 }
 
 form.nosubmit {
@@ -60,7 +63,8 @@ input.nosubmit:focus {
 }
 
 .graphColumn,
-.circ-bg {
+.circ-bg,
+.product-main-container {
   background-color: white;
   border-radius: 0.5em;
   padding: 10px 20px;
@@ -146,13 +150,16 @@ input.nosubmit:focus {
   background: linear-gradient(288deg, rgba(255, 231, 200, 1) 0%, rgba(250, 235, 215, 1) 100%);
 }
 
-.product-img{
-  width:40px
+.product-img {
+  width: 40px
 }
 
-.product-title , .product-subtitle{
+.product-title,
+.product-subtitle {
   display: inline-block;
+  margin: 0;
 }
+
 /* 228b22 */
 /* 
 aliceblue
@@ -160,3 +167,43 @@ aliceblue
 lavender
 antiquewhite
  */
+
+.product-img-container {
+  display: flex;
+}
+
+.product-img-container>img {
+  width: 100%;
+  border-radius: 0.8em;
+  margin: 10px 0px
+}
+
+.product-headings {
+  font-size: 12px;
+  color: #7d7d7d;
+}
+
+.product-subtitle {
+  font-size: 12px;
+  color: #7d7d7d;
+}
+
+.product-main-container {
+  margin: 0;
+  top: -20px;
+  position: relative;
+}
+
+.product-main-container input.nosubmit {
+  padding: 0px 4px 0px 40px;
+}
+
+.dropdown-toggle{
+  font-size: 0.9em;
+  color:gray;
+  padding: 0px 12px;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-border-color: #f8f9fa;
+}
+
