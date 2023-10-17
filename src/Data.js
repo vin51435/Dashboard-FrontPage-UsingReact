@@ -2,12 +2,12 @@ export const UserData = [
   {
     id: 1,
     month: 'Jan',
-    income: 1292,
+    income: 1192,
   },
   {
     id: 2,
     month: 'Feb',
-    income: 1922,
+    income: 822,
   },
   {
     id: 3,
@@ -17,12 +17,12 @@ export const UserData = [
   {
     id: 4,
     month: 'Apr',
-    income: 1229,
+    income: 1002,
   }
   , {
     id: 5,
     month: 'May',
-    income: 1229,
+    income: 1193,
   }
   , {
     id: 6,
@@ -32,32 +32,32 @@ export const UserData = [
   , {
     id: 7,
     month: 'Jul',
-    income: 1229,
+    income: 1299,
   }
   , {
     id: 8,
     month: 'Aug',
-    income: 1059,
+    income: 959,
   }
   , {
     id: 9,
     month: 'Sep',
-    income: 1229,
+    income: 1200,
   }
   , {
     id: 10,
     month: 'Oct',
-    income: 1229,
+    income: 1329,
   }
   , {
     id: 11,
     month: 'Nov',
-    income: 1229,
+    income: 1429,
   }
   , {
     id: 12,
     month: 'Dec',
-    income: 1229,
+    income: 1529,
   }
 ];
 
