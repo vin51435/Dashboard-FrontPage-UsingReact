@@ -27,7 +27,7 @@ export const UserData = [
   , {
     id: 6,
     month: 'Jun',
-    income: 1629,
+    income: 1119,
   }
   , {
     id: 7,
