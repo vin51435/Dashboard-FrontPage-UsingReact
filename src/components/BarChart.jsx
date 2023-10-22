@@ -10,7 +10,6 @@ function BarChart({ chartData }) {
     changeBarColor((currentMonth - 1), 'rgba(21, 21, 87,1 )');
   }, [userData]);
 
-  
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.month),
     datasets: [
@@ -19,12 +18,12 @@ function BarChart({ chartData }) {
         data: UserData.map((data) => data.income),
         backgroundColor: [
           'rgba(200, 200, 200,1 )',
-          'rgba(200, 200, 200,1 )',
-          'rgba(200, 200, 200,1 )',
-          'rgba(200, 200, 200,1 )',
-          'rgba(200, 200, 200,1 )',
-          'rgba(200, 200, 200,1 )',
-          'rgba(21, 21, 87,1 )',
+          // 'rgba(200, 200, 200,1 )',
+          // 'rgba(200, 200, 200,1 )',
+          // 'rgba(200, 200, 200,1 )',
+          // 'rgba(200, 200, 200,1 )',
+          // 'rgba(200, 200, 200,1 )',
+          // 'rgba(21, 21, 87,1 )',
         ], // Different colors for each bar
         borderColor: [
           'rgba(33, 37, 41,0.2)',
