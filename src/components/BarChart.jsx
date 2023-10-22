@@ -10,6 +10,7 @@ function BarChart({ chartData }) {
     changeBarColor((currentMonth - 1), 'rgba(21, 21, 87,1 )');
   }, [userData]);
 
+  
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.month),
     datasets: [
