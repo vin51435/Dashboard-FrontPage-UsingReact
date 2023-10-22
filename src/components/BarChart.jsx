@@ -5,6 +5,11 @@ import { Chart as ChartJS } from 'chart.js/auto';
 
 function BarChart({ chartData }) {
   const currentMonth = 10;
+
+  useEffect(() => {
+    changeBarColor((currentMonth - 1), 'rgba(21, 21, 87,1 )');
+  }, [userData]);
+
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.month),
     datasets: [
@@ -41,9 +46,6 @@ function BarChart({ chartData }) {
     // console.log(allBackgroundColor);
   };
 
-  useEffect(() => {
-    changeBarColor((currentMonth - 1), 'rgba(21, 21, 87,1 )');
-  }, []);
 
   const options = {
     scales: {
@@ -66,7 +68,7 @@ function BarChart({ chartData }) {
   };
   return (
     <Bar data={userData} options={options} className='graphColumn' />
-    );
+  );
 }
-export default BarChart
+export default BarChart;
 // options={} 
